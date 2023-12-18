@@ -1,7 +1,7 @@
 # IPFS Bulk Upload Tool
 
 ## Description
-This repository hosts a Python script for bulk uploading images to IPFS and updating an associated JSON file with the IPFS hashes (CIDs). It's designed to remove `.DS_Store` files, upload images from a specified directory to an IPFS node, and generate a text file with links to the uploaded images. Additionally, it updates an existing metadata/JSON file with new IPFS links. This tool is invaluable for projects requiring batch uploading of assets to IPFS and automated metadata updates.
+This repository hosts a Python script for bulk uploading images to IPFS and updating an associated JSON file with the IPFS hashes (CIDs). It's designed to remove `.DS_Store` files, upload images from a specified directory to an IPFS node, and generate a text file with links to the uploaded images. Additionally, it updates an existing metadata/JSON file with new IPFS links. This tool is valuable for projects requiring batch uploading of assets to IPFS and automated metadata updates.
 
 ## Installation and Usage
 

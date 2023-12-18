@@ -1,24 +1,26 @@
-IPFS Bulk Upload Tool
-Description
-This repository contains a Python script designed for efficiently uploading images to the InterPlanetary File System (IPFS) and updating an associated JSON file with the resultant IPFS hashes (CIDs). Primarily, the script automates the removal of .DS_Store files (specific to macOS), facilitates the batch uploading of images from a specified directory to an IPFS node, and generates a text file containing links to these uploaded images. Additionally, it efficiently updates an existing metadata/JSON file with new IPFS links, making it a valuable tool for projects that necessitate bulk asset uploads to IPFS along with corresponding metadata updates.
+# IPFS Bulk Upload Tool
 
-Installation and Usage
-Prerequisites
-Ensure Python is installed on your system.
-Set up an IPFS node either on your local machine or a server.
-Installation
-Install the IPFS HTTP Client Library:
-Copy code
-pip install ipfshttpclient
-Preparing Your Data
-Place the images intended for upload in a designated folder (e.g., 'images').
-Prepare a JSON file (e.g., 'metadata.json') to be updated with IPFS links.
-Configuration
-In the script's main function, update the folder_path to your image folder's path.
-Update the json_file path to your JSON file.
-Execution
-Run the script:
-php
-Copy code
-python <script_name>.py
-This script will efficiently upload your images to the configured IPFS node, create a file with the links, and update your JSON metadata file with the new IPFS links.
+## Description
+This repository hosts a Python script for bulk uploading images to IPFS and updating an associated JSON file with the IPFS hashes (CIDs). It's designed to remove `.DS_Store` files, upload images from a specified directory to an IPFS node, and generate a text file with links to the uploaded images. Additionally, it updates an existing metadata/JSON file with new IPFS links. This tool is invaluable for projects requiring batch uploading of assets to IPFS and automated metadata updates.
+
+## Installation and Usage
+
+### Prerequisites
+- Python installation
+- An IPFS node set up locally or on a server
+
+### Installation
+1. Install IPFS HTTP Client Library: pip install ipfshttpclient
+
+### Data Preparation
+- Place images in a folder (e.g., 'images').
+- Prepare a JSON file (e.g., 'metadata.json') for updating with IPFS links.
+
+### Configuration
+- Update `folder_path` in the script's `main` function to the path of your images folder.
+- Update `json_file` to the path of your JSON file.
+
+### Execution
+- Run the script: python <script_name>.py
+
+The script uploads images to IPFS, creates a links file, and updates the JSON file with new IPFS links.
